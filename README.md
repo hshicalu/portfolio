@@ -2,6 +2,14 @@
 
 個人開発で取り組んだ課題、設計・技術選定、検証、学びをまとめるポートフォリオです。
 
+## プロジェクト
+
+### [AI Incident Investigator](projects/ai-incident-investigator/README.md)
+
+ログ・メトリクス・デプロイ履歴から、根拠をたどれる調査レポートを作るローカルの障害調査支援ツールです。React / TypeScript、FastAPI / Python、LangGraphを使い、原因候補と観測事実の区別、入力イベントへの移動、保存後の再確認を実装しました。
+
+[紹介記事を読む：画面デモ・構成図・設計判断・検証と学び](projects/ai-incident-investigator/README.md)
+
 ## 掲載する内容
 
 - プロジェクトの背景と解決したい課題
