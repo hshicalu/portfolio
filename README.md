@@ -10,6 +10,12 @@
 
 [紹介記事を読む：画面デモ・構成図・設計判断・検証と学び](projects/ai-incident-investigator/README.md)
 
+### [Career Research Agent](projects/career-research-agent/README.md)
+
+企業名や公開求人URLから出典付きレポートを作り、保存・再表示できる個人用ツールです。SvelteKit / TypeScript、SQLite / Drizzle、Responses API / Web Searchを使い、構成の簡略化、有料APIの呼び出し制御、保存失敗からの復旧と生成内容の検証に取り組みました。
+
+[紹介記事を読む：架空データの画面・構成図・費用と保存の設計・検証の限界](projects/career-research-agent/README.md)
+
 ## 掲載する内容
 
 - プロジェクトの背景と解決したい課題
