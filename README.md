@@ -16,6 +16,12 @@
 
 [紹介記事を読む：架空データの画面・構成図・費用と保存の設計・検証の限界](projects/career-research-agent/README.md)
 
+### [GitHub Planning Agent](projects/github-planning-agent/README.md)
+
+GitHub Issueとコードから根拠付きの実装計画を作ることを目指した技術検証プロトタイプです。Next.js / TypeScript、OpenAI Agents SDK、Octokitを使い、固定コミットの引用検証、APIの実行予算、失敗の記録に取り組みました。実計画の有用性は未確認で、現在の実装と実評価からの学びを紹介します。
+
+[紹介記事を読む：合成サンプルの画面・構成図・根拠と予算の設計・未検証事項](projects/github-planning-agent/README.md)
+
 ## 掲載する内容
 
 - プロジェクトの背景と解決したい課題
