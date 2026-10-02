@@ -22,6 +22,12 @@ GitHub Issueとコードから根拠付きの実装計画を作ることを目�
 
 [紹介記事を読む：合成サンプルの画面・構成図・根拠と予算の設計・未検証事項](projects/github-planning-agent/README.md)
 
+### [Local Codebase Navigator](projects/local-codebase-navigator/README.md)
+
+非公開コードをローカルで解析し、関連ファイルと根拠をエディター内で確認するVS Code拡張です。TypeScript、Tree-sitter、SQLite FTS、任意のOllama文章化を使い、候補の説明可能性、中止後の復帰、保存と処理ホストの境界に取り組みました。
+
+[紹介記事を読む：操作例・構成・設計判断・検証と残課題](projects/local-codebase-navigator/README.md)
+
 ## 掲載する内容
 
 - プロジェクトの背景と解決したい課題
