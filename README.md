@@ -58,6 +58,12 @@ GitHub Issueとコードから根拠付きの実装計画を作ることを目�
 
 [紹介記事を読む：操作例と実結果の修正画面・構成図・分類と保存の設計・評価と限界](projects/local-feedback-analyst/README.md)
 
+### [Local File Organizer](projects/local-file-organizer/README.md)
+
+文書の内容から端末内のLLMが分類・名前を提案し、確認した操作だけを実行・取り消しできるmacOS向け技術プロトタイプです。Tauri 2 / Svelte / Rust、Ollama、SQLiteを使い、計画後の変更検知、上書き拒否、履歴と取り消しに取り組みました。実モデル評価と実アプリの操作結果、理由・引用の誤りや未検証の制約を紹介します。
+
+[紹介記事を読む：実アプリの画面・構成と安全性・実モデル評価・失敗と限界](projects/local-file-organizer/README.md)
+
 ## 掲載する内容
 
 - プロジェクトの背景と解決したい課題
