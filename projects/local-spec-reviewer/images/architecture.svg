@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="500" viewBox="0 0 1000 500" role="img" aria-labelledby="title desc">
+<title id="title">Local Spec Reviewer の構成</title>
+<desc id="desc">ブラウザからローカルのSvelteKitサーバーへ文書を渡す。サーバーが原文のIDと位置を作り、Ollamaの出力を検証してSQLiteに保存する。利用者は保存原文からの引用を確認し、判断を保存する。</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0 0L8 4L0 8Z" fill="#547561"/></marker></defs>
+<rect width="1000" height="500" rx="16" fill="#f6f7f3"/>
+<g font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Hiragino Sans,sans-serif" fill="#253d36">
+<text x="40" y="44" font-size="21" font-weight="600">Local Spec Reviewer</text>
+<text x="40" y="72" font-size="14" fill="#617566">すべて端末内で処理 ・ 新規解析にはローカルLLMが必須</text>
+<g fill="#fff" stroke="#cbd9c9" stroke-width="2">
+<rect x="40" y="115" width="240" height="210" rx="10"/>
+<rect x="370" y="115" width="270" height="210" rx="10"/>
+<rect x="730" y="115" width="230" height="210" rx="10"/>
+<rect x="370" y="390" width="270" height="80" rx="10"/>
+</g>
+<g font-size="18" font-weight="600"><text x="60" y="155">ブラウザ</text><text x="390" y="155">SvelteKit サーバー</text><text x="750" y="155">Ollama</text><text x="390" y="423">SQLite</text></g>
+<g font-size="14"><text x="60" y="194">2文書の入力</text><text x="60" y="225">指摘と左右の原文を確認</text><text x="60" y="256">採用・却下・保留とメモ</text><text x="60" y="293" fill="#617566">最終判断は利用者</text>
+<text x="390" y="194">原文を分割しID・位置を付与</text><text x="390" y="225">生成結果と根拠IDを検証</text><text x="390" y="256">引用は保存原文から生成</text><text x="390" y="293" fill="#617566">失敗と指摘0件を区別</text>
+<text x="750" y="194">対象・版・条件・例外・時期</text><text x="750" y="225">矛盾候補・曖昧条件・質問</text><text x="750" y="256">返す根拠はID</text><text x="750" y="293" fill="#617566">クラウドへの切り替えなし</text>
+<text x="390" y="450">原文・解析の記録 ＋ 判断・保存版</text>
+</g>
+<g stroke="#547561" stroke-width="2" marker-start="url(#arrow)" marker-end="url(#arrow)"><path d="M292 210H358"/><path d="M652 210H718"/><path d="M505 338V378"/></g>
+<text x="293" y="193" font-size="11">入力／表示</text><text x="650" y="193" font-size="11">推論／検証</text><text x="520" y="362" font-size="12">保存・再表示</text>
+<text x="40" y="410" font-size="13" fill="#617566">保存記録は再推論せず開ける</text><text x="40" y="438" font-size="13" fill="#617566">文書内の指示も分析対象のデータ</text>
+</g></svg>
