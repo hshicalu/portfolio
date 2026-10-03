@@ -40,6 +40,12 @@ GitHub Issueとコードから根拠付きの実装計画を作ることを目�
 
 [紹介記事を読む：保存済み実モデル出力の画面・構成図・根拠と保存の設計・評価と限界](projects/local-spec-reviewer/README.md)
 
+### [Local Data Workbench](projects/local-data-workbench/README.md)
+
+日本語の質問を端末内のLLMで分析計画に変え、人が確認してからCSVを集計する技術プロトタイプです。SvelteKit / TypeScript、Ollama、DuckDB、SQLiteを使い、許可した計画からのSQL生成、元行の確認、再推論なしの再表示に取り組みました。実モデルの固定12/12・独立5/6という評価と、意味解釈に残る限界を紹介します。
+
+[紹介記事を読む：実モデルの集計画面・構成と設計判断・改善と失敗・開発の区切り](projects/local-data-workbench/README.md)
+
 ## 掲載する内容
 
 - プロジェクトの背景と解決したい課題
