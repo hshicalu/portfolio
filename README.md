@@ -28,6 +28,12 @@ GitHub Issueとコードから根拠付きの実装計画を作ることを目�
 
 [紹介記事を読む：操作例・構成・設計判断・検証と残課題](projects/local-codebase-navigator/README.md)
 
+### [Private Interview Coach](projects/private-interview-coach/README.md)
+
+職務経歴や開発記録を基に、端末内のLLMが回答を深掘りするテキスト模擬面接の技術プロトタイプです。SvelteKit / TypeScript、SQLite / Drizzle、Ollamaを使い、原文引用の検証、アプリ側の対話状態管理、保存・再表示に取り組みました。合成ケースの実モデル評価と、生成品質に残る課題を紹介します。
+
+[紹介記事を読む：実モデルの合成画面・構成図・根拠と状態の設計・評価と限界](projects/private-interview-coach/README.md)
+
 ## 掲載する内容
 
 - プロジェクトの背景と解決したい課題
