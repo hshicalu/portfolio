@@ -34,6 +34,12 @@ GitHub Issueとコードから根拠付きの実装計画を作ることを目�
 
 [紹介記事を読む：実モデルの合成画面・構成図・根拠と状態の設計・評価と限界](projects/private-interview-coach/README.md)
 
+### [Local Spec Reviewer](projects/local-spec-reviewer/README.md)
+
+短い仕様書・議事録を端末内のLLMで比較し、両方の原文を確認して指摘の採否を保存するMVPです。SvelteKit / TypeScript、SQLite / Drizzle、Ollamaを使い、根拠IDの検証、原文からの引用、再推論なしの復元に取り組みました。検出品質は評価継続中で、40回の実モデル評価と改善候補を不採用にした理由も紹介します。
+
+[紹介記事を読む：保存済み実モデル出力の画面・構成図・根拠と保存の設計・評価と限界](projects/local-spec-reviewer/README.md)
+
 ## 掲載する内容
 
 - プロジェクトの背景と解決したい課題
