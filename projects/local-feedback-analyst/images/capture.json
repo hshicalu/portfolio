@@ -1,0 +1,38 @@
+{
+  "capturedAt": "2026-10-03T06:35:49.764Z",
+  "mode": "synthetic-input-and-curated-HTTP-mock; no-real-inference",
+  "browser": "Chromium 153.0.8010.12",
+  "viewport": {
+    "width": 1440,
+    "height": 1100
+  },
+  "mobileTestViewport": {
+    "width": 390,
+    "height": 844
+  },
+  "fixtureSha256": "102801b6595a893d9127d56bb09310c1063d94e39405db54d3f1a879104b065a",
+  "images": [
+    {
+      "name": "import.png",
+      "sha256": "ac653233933c79117cbbfaf70e704b7d671b9d5ae68ecdc8b6d2fabf745fbc4a"
+    },
+    {
+      "name": "review.png",
+      "sha256": "86e62dcc3bb6b16259823e405877f56f321db2a16e04dbbb044cedbd59314cd8"
+    },
+    {
+      "name": "correction.png",
+      "sha256": "76643127312acb88781991855216f6b59f875391bba1f701c6e0f9f0e372f549"
+    }
+  ],
+  "checks": [
+    "CSV-preview-without-save-or-run",
+    "topic-status-search-filters",
+    "manual-correction-and-reload",
+    "axe-wcag2a-wcag2aa-wcag21aa",
+    "keyboard-focus-return",
+    "390px-no-horizontal-overflow",
+    "browser-no-external-requests"
+  ],
+  "realModelEvaluation": "not-performed"
+}

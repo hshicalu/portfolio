@@ -46,6 +46,12 @@ GitHub Issueとコードから根拠付きの実装計画を作ることを目�
 
 [紹介記事を読む：実モデルの集計画面・構成と設計判断・改善と失敗・開発の区切り](projects/local-data-workbench/README.md)
 
+### [Local Feedback Analyst](projects/local-feedback-analyst/README.md)
+
+問い合わせCSVを端末内のLLMで課題別に分類し、原文を確認しながら人が修正する個人開発プロトタイプです。SvelteKit / TypeScript、SQLite / Drizzle、Ollamaを使い、課題抽出・類似候補検索・分類判断の分離、再分析からの修正保護、保存・出力に取り組みました。合成10件の実モデル評価と、情報不足への過剰分類や処理時間の限界も紹介します。
+
+[紹介記事を読む：操作例と実結果の修正画面・構成図・分類と保存の設計・評価と限界](projects/local-feedback-analyst/README.md)
+
 ## 掲載する内容
 
 - プロジェクトの背景と解決したい課題
