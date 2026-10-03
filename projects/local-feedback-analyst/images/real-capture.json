@@ -1,0 +1,38 @@
+{
+  "kind": "real-model-output-with-automated-correction-controls",
+  "capturedAt": "2026-10-03T08:39:47.628Z",
+  "sourceResultSha256": "3f9425a34d90becb257d6acd5f6c29b7b826206b852b51bd39f3e2451f4b30b6",
+  "promptVersion": "feedback-v5",
+  "input": "10 synthetic inquiries",
+  "humanApproval": "Reference labels and topic mapping / unclassified correction; not all reasoning text",
+  "correctionActor": "Playwright automation applying approved correction; not a timed human review",
+  "ollamaStoppedDuringCorrection": true,
+  "viewport": {
+    "width": 1440,
+    "height": 1100
+  },
+  "images": [
+    {
+      "file": "images/real-before-correction.png",
+      "sha256": "c741c09c310ee8c6c5cbc61401fac70727a0d60f595d920a9e6b78288865452c",
+      "width": 1440,
+      "height": 1100,
+      "chunks": [
+        "IHDR",
+        "IDAT",
+        "IEND"
+      ]
+    },
+    {
+      "file": "images/real-after-correction.png",
+      "sha256": "e487066413eccf7866f6d058b03f2f2ed4dd416df11511a8f8150f80b07b292a",
+      "width": 1440,
+      "height": 1100,
+      "chunks": [
+        "IHDR",
+        "IDAT",
+        "IEND"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "kind": "synthetic-real-model-development-evaluation",
+  "date": "2026-10-03",
+  "uniqueInputRows": 10,
+  "repeatedTrials": 3,
+  "hardware": {
+    "cpu": "Apple M6",
+    "logicalCpus": 12,
+    "ramGiB": 32,
+    "os": "macOS 27.0.1"
+  },
+  "ollamaVersion": "0.34.4",
+  "models": [
+    {
+      "name": "qwen3:8b",
+      "digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "details": {
+        "format": "gguf",
+        "family": "qwen3",
+        "families": [
+          "qwen3"
+        ],
+        "parameter_size": "8.2B",
+        "quantization_level": "Q4_K_M"
+      }
+    },
+    {
+      "name": "qwen3-embedding:0.6b",
+      "digest": "ac6da0dfba84a81fdbfbaf330198c33cd77c4cdfc53e8bc50eb581914a15621d",
+      "details": {
+        "format": "gguf",
+        "family": "qwen3",
+        "families": [
+          "qwen3"
+        ],
+        "parameter_size": "595.78M",
+        "quantization_level": "Q8_0"
+      }
+    }
+  ],
+  "settings": {
+    "temperature": 0,
+    "seed": 42,
+    "num_ctx": 16384,
+    "num_predict": 3000,
+    "think": true,
+    "timeoutMs": 180000
+  },
+  "approval": {
+    "reviewer": "user-in-chat",
+    "approvedOn": "2026-10-03",
+    "decision": "ラベル対応と修正判定を承認",
+    "scope": "semantic-topic-label-mapping-and-required-unclassification; not approval of all reasoning text",
+    "reuse": "exact topic title and condition matches only",
+    "reviewMinutes": null
+  },
+  "reviewMinutes": null,
+  "rssCaveat": "500ms sampled sum of server and descendants; shared pages may be double-counted; Metal allocations may not be fully represented",
+  "runs": [
+    {
+      "trial": 1,
+      "rawResultSha256": "3f9425a34d90becb257d6acd5f6c29b7b826206b852b51bd39f3e2451f4b30b6",
+      "promptVersion": "feedback-v5",
+      "wallTimeMs": 565296,
+      "ollamaPeakRssKiB": 14482016,
+      "modelsLoadedBefore": [
+        "qwen3:8b",
+        "qwen3-embedding:0.6b"
+      ],
+      "metrics": {
+        "metricsVersion": 2,
+        "inputRows": 10,
+        "completedRows": 10,
+        "failedOrPendingRows": 0,
+        "correctionRows": 1,
+        "correctionRate": 0.1,
+        "joinedTopicPairs": 6,
+        "falseMergedTopicPairs": 0,
+        "falseMergeRate": 0,
+        "disjointReferenceTopicPairs": 0,
+        "sameReferenceLabelPairs": 6,
+        "missedGroupingPairs": 0,
+        "missedGroupingRate": 0,
+        "reviewer": "user-approved exact mapping",
+        "referenceReviewed": true,
+        "reviewMinutes": null,
+        "reviewScope": "semantic-topic-label-mapping-and-required-unclassification; not approval of all reasoning text"
+      },
+      "failures": []
+    },
+    {
+      "trial": 2,
+      "rawResultSha256": "be08208469e5b0a5660d2f674f88271557152e312e03c66253c436f4c51fd916",
+      "promptVersion": "feedback-v5",
+      "wallTimeMs": 505004,
+      "ollamaPeakRssKiB": 14699312,
+      "modelsLoadedBefore": [
+        "qwen3:8b",
+        "qwen3-embedding:0.6b"
+      ],
+      "metrics": {
+        "metricsVersion": 2,
+        "inputRows": 10,
+        "completedRows": 10,
+        "failedOrPendingRows": 0,
+        "correctionRows": 1,
+        "correctionRate": 0.1,
+        "joinedTopicPairs": 6,
+        "falseMergedTopicPairs": 0,
+        "falseMergeRate": 0,
+        "disjointReferenceTopicPairs": 0,
+        "sameReferenceLabelPairs": 6,
+        "missedGroupingPairs": 0,
+        "missedGroupingRate": 0,
+        "reviewer": "user-approved exact mapping",
+        "referenceReviewed": true,
+        "reviewMinutes": null,
+        "reviewScope": "semantic-topic-label-mapping-and-required-unclassification; not approval of all reasoning text"
+      },
+      "failures": []
+    },
+    {
+      "trial": 3,
+      "rawResultSha256": "ffad74cbe2c0837ffc1a8093370aa528f9ac3fc3cc7079776cb19801550143b8",
+      "promptVersion": "feedback-v5",
+      "wallTimeMs": 661359,
+      "ollamaPeakRssKiB": 14581408,
+      "modelsLoadedBefore": [
+        "qwen3:8b",
+        "qwen3-embedding:0.6b"
+      ],
+      "metrics": {
+        "metricsVersion": 2,
+        "inputRows": 10,
+        "completedRows": 9,
+        "failedOrPendingRows": 1,
+        "correctionRows": 1,
+        "correctionRate": 0.1111111111111111,
+        "joinedTopicPairs": 3,
+        "falseMergedTopicPairs": 0,
+        "falseMergeRate": 0,
+        "disjointReferenceTopicPairs": 0,
+        "sameReferenceLabelPairs": 3,
+        "missedGroupingPairs": 0,
+        "missedGroupingRate": 0,
+        "reviewer": "user-approved exact mapping",
+        "referenceReviewed": true,
+        "reviewMinutes": null,
+        "reviewScope": "semantic-topic-label-mapping-and-required-unclassification; not approval of all reasoning text"
+      },
+      "failures": [
+        {
+          "caseId": "multiple",
+          "error": "Unexpected end of JSON input",
+          "durationMs": 197641
+        }
+      ]
+    }
+  ]
+}
