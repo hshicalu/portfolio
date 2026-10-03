@@ -46,6 +46,12 @@ GitHub Issueとコードから根拠付きの実装計画を作ることを目�
 
 [紹介記事を読む：実モデルの集計画面・構成と設計判断・改善と失敗・開発の区切り](projects/local-data-workbench/README.md)
 
+### [Private Voice Journal](projects/private-voice-journal/README.md)
+
+録音済みの音声メモを端末内で文字起こしし、実施内容・判断理由・困りごと・次の行動へ整理する技術プロトタイプです。SvelteKit / TypeScript、whisper.cpp、Ollama、SQLiteを使い、認識原文と修正版、生成した記録の版を分けて保存します。合成音声6ケースの実モデル評価と、モデル選定・誤認識・情報の抜けから得た学びを紹介します。
+
+[紹介記事を読む：実生成の保存画面・構成と版管理・モデル比較・実測と限界](projects/private-voice-journal/README.md)
+
 ### [Local Feedback Analyst](projects/local-feedback-analyst/README.md)
 
 問い合わせCSVを端末内のLLMで課題別に分類し、原文を確認しながら人が修正する個人開発プロトタイプです。SvelteKit / TypeScript、SQLite / Drizzle、Ollamaを使い、課題抽出・類似候補検索・分類判断の分離、再分析からの修正保護、保存・出力に取り組みました。合成10件の実モデル評価と、情報不足への過剰分類や処理時間の限界も紹介します。
