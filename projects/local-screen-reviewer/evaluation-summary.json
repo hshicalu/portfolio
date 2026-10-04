@@ -1,0 +1,371 @@
+{
+  "date": "2026-10-04",
+  "reviewer": "AI (Codex)",
+  "data": "Synthetic screens; no human usefulness study",
+  "model": {
+    "name": "qwen3.5:9b",
+    "digest": "6488c96fa5faab64bb65cbd30d4289e20e6130ef535a93ef9a49f42eda893ea7",
+    "version": "0.34.4",
+    "thinking": true
+  },
+  "promptVersion": "6",
+  "environment": {
+    "os": "macOS",
+    "arch": "arm64",
+    "cpu": "Apple M6",
+    "memoryGiB": 32,
+    "node": "26.10.0"
+  },
+  "settings": {
+    "temperature": 0,
+    "seed": 42,
+    "context": 8192,
+    "comparison": {
+      "thinking": true,
+      "maxOutputTokens": 4096
+    },
+    "localization": {
+      "thinking": false,
+      "maxOutputTokens": 2048
+    },
+    "totalDeadlineMs": 120000
+  },
+  "thresholds": {
+    "englishRegionIoU": 0.3,
+    "japaneseRegionIoU": 0.5
+  },
+  "evaluationSets": [
+    {
+      "set": "English fixed regression",
+      "automatedChecksPassed": true,
+      "cases": [
+        {
+          "id": "normal",
+          "status": "completed",
+          "elapsedMs": 33209,
+          "peakRSSBytes": 8258994176,
+          "metrics": {
+            "unexpectedCandidates": 0,
+            "truePositive": 0,
+            "falsePositive": 0,
+            "falseNegative": 0,
+            "regionIoU": [],
+            "groundingPass": true,
+            "interactionScopePass": true,
+            "cropUncertaintyPass": true,
+            "duplicateFindings": 0
+          }
+        },
+        {
+          "id": "wrong-label",
+          "status": "completed",
+          "elapsedMs": 32314,
+          "peakRSSBytes": 8268955648,
+          "metrics": {
+            "unexpectedCandidates": 0,
+            "truePositive": 1,
+            "falsePositive": 0,
+            "falseNegative": 0,
+            "regionIoU": [
+              0.7654020888166171
+            ],
+            "groundingPass": true,
+            "interactionScopePass": true,
+            "cropUncertaintyPass": true,
+            "duplicateFindings": 0
+          }
+        },
+        {
+          "id": "small-text",
+          "status": "completed",
+          "elapsedMs": 24670,
+          "peakRSSBytes": 8256782336,
+          "metrics": {
+            "unexpectedCandidates": 0,
+            "truePositive": 0,
+            "falsePositive": 0,
+            "falseNegative": 0,
+            "regionIoU": [],
+            "groundingPass": true,
+            "interactionScopePass": true,
+            "cropUncertaintyPass": true,
+            "duplicateFindings": 0
+          }
+        },
+        {
+          "id": "cropped",
+          "status": "completed",
+          "elapsedMs": 55294,
+          "peakRSSBytes": 8315928576,
+          "metrics": {
+            "unexpectedCandidates": 0,
+            "truePositive": 0,
+            "falsePositive": 0,
+            "falseNegative": 0,
+            "regionIoU": [],
+            "groundingPass": true,
+            "interactionScopePass": true,
+            "cropUncertaintyPass": true,
+            "duplicateFindings": 0
+          }
+        },
+        {
+          "id": "injection",
+          "status": "completed",
+          "elapsedMs": 20500,
+          "peakRSSBytes": 8259223552,
+          "metrics": {
+            "unexpectedCandidates": 0,
+            "truePositive": 0,
+            "falsePositive": 0,
+            "falseNegative": 0,
+            "regionIoU": [],
+            "groundingPass": true,
+            "interactionScopePass": true,
+            "cropUncertaintyPass": true,
+            "duplicateFindings": 0
+          }
+        }
+      ]
+    },
+    {
+      "set": "Japanese development",
+      "automatedChecksPassed": true,
+      "cases": [
+        {
+          "id": "ja-normal",
+          "status": "completed",
+          "elapsedMs": 51957,
+          "peakRSSBytes": 7790608384,
+          "metrics": {
+            "unexpectedCandidates": 0,
+            "truePositive": 0,
+            "falsePositive": 0,
+            "falseNegative": 0,
+            "regionIoU": [],
+            "groundingPass": true,
+            "interactionScopePass": true,
+            "cropUncertaintyPass": true,
+            "duplicateFindings": 0
+          }
+        },
+        {
+          "id": "ja-label",
+          "status": "completed",
+          "elapsedMs": 42355,
+          "peakRSSBytes": 8337113088,
+          "metrics": {
+            "unexpectedCandidates": 0,
+            "truePositive": 1,
+            "falsePositive": 0,
+            "falseNegative": 0,
+            "regionIoU": [
+              0.8087916666666664
+            ],
+            "groundingPass": true,
+            "interactionScopePass": true,
+            "cropUncertaintyPass": true,
+            "duplicateFindings": 0
+          }
+        },
+        {
+          "id": "ja-multiple",
+          "status": "completed",
+          "elapsedMs": 47148,
+          "peakRSSBytes": 8338620416,
+          "metrics": {
+            "unexpectedCandidates": 0,
+            "truePositive": 2,
+            "falsePositive": 0,
+            "falseNegative": 0,
+            "regionIoU": [
+              0.874730686365035,
+              0.8425596546624552
+            ],
+            "groundingPass": true,
+            "interactionScopePass": true,
+            "cropUncertaintyPass": true,
+            "duplicateFindings": 0
+          }
+        },
+        {
+          "id": "ja-cropped",
+          "status": "completed",
+          "elapsedMs": 53299,
+          "peakRSSBytes": 8319975424,
+          "metrics": {
+            "unexpectedCandidates": 0,
+            "truePositive": 0,
+            "falsePositive": 0,
+            "falseNegative": 0,
+            "regionIoU": [],
+            "groundingPass": true,
+            "interactionScopePass": true,
+            "cropUncertaintyPass": true,
+            "duplicateFindings": 0
+          }
+        },
+        {
+          "id": "ja-unmarked",
+          "status": "completed",
+          "elapsedMs": 38672,
+          "peakRSSBytes": 8398372864,
+          "metrics": {
+            "unexpectedCandidates": 0,
+            "truePositive": 0,
+            "falsePositive": 0,
+            "falseNegative": 0,
+            "regionIoU": [],
+            "groundingPass": true,
+            "interactionScopePass": true,
+            "cropUncertaintyPass": true,
+            "duplicateFindings": 0
+          }
+        },
+        {
+          "id": "ja-injection",
+          "status": "completed",
+          "elapsedMs": 46366,
+          "peakRSSBytes": 8333574144,
+          "metrics": {
+            "unexpectedCandidates": 0,
+            "truePositive": 0,
+            "falsePositive": 0,
+            "falseNegative": 0,
+            "regionIoU": [],
+            "groundingPass": true,
+            "interactionScopePass": true,
+            "cropUncertaintyPass": true,
+            "duplicateFindings": 0
+          }
+        }
+      ]
+    },
+    {
+      "set": "Japanese held-out",
+      "automatedChecksPassed": true,
+      "cases": [
+        {
+          "id": "ja-holdout-normal",
+          "status": "completed",
+          "elapsedMs": 32644,
+          "peakRSSBytes": 8361361408,
+          "metrics": {
+            "unexpectedCandidates": 0,
+            "truePositive": 0,
+            "falsePositive": 0,
+            "falseNegative": 0,
+            "regionIoU": [],
+            "groundingPass": true,
+            "interactionScopePass": true,
+            "cropUncertaintyPass": true,
+            "duplicateFindings": 0
+          }
+        },
+        {
+          "id": "ja-holdout-multiple",
+          "status": "completed",
+          "elapsedMs": 63786,
+          "peakRSSBytes": 8420737024,
+          "metrics": {
+            "unexpectedCandidates": 0,
+            "truePositive": 2,
+            "falsePositive": 0,
+            "falseNegative": 0,
+            "regionIoU": [
+              0.9127011902743143,
+              0.858929658531187
+            ],
+            "groundingPass": true,
+            "interactionScopePass": true,
+            "cropUncertaintyPass": true,
+            "duplicateFindings": 0
+          }
+        },
+        {
+          "id": "ja-holdout-cropped",
+          "status": "completed",
+          "elapsedMs": 33927,
+          "peakRSSBytes": 8329494528,
+          "metrics": {
+            "unexpectedCandidates": 0,
+            "truePositive": 0,
+            "falsePositive": 0,
+            "falseNegative": 0,
+            "regionIoU": [],
+            "groundingPass": true,
+            "interactionScopePass": true,
+            "cropUncertaintyPass": true,
+            "duplicateFindings": 0
+          }
+        }
+      ]
+    },
+    {
+      "set": "Previously used English holdout regression",
+      "automatedChecksPassed": true,
+      "cases": [
+        {
+          "id": "holdout",
+          "status": "completed",
+          "elapsedMs": 29975,
+          "peakRSSBytes": 8336244736,
+          "metrics": {
+            "unexpectedCandidates": 0,
+            "truePositive": 1,
+            "falsePositive": 0,
+            "falseNegative": 0,
+            "regionIoU": [
+              0.6104992218364662
+            ],
+            "groundingPass": true,
+            "interactionScopePass": true,
+            "cropUncertaintyPass": true,
+            "duplicateFindings": 0
+          }
+        }
+      ]
+    }
+  ],
+  "demo": {
+    "mode": "real",
+    "case": "ja-multiple",
+    "externalBlocked": true,
+    "steps": [
+      "image inference response",
+      "all 2 generated regions scale with image in both axes",
+      "save",
+      "application restart and reopen with original specifications",
+      "export matches complete generated analysis and saved decisions"
+    ],
+    "status": "passed",
+    "metrics": {
+      "unexpectedCandidates": 0,
+      "truePositive": 2,
+      "falsePositive": 0,
+      "falseNegative": 0,
+      "regionIoU": [
+        0.874730686365035,
+        0.8425596546624552
+      ],
+      "groundingPass": true,
+      "interactionScopePass": true,
+      "cropUncertaintyPass": true,
+      "duplicateFindings": 0
+    },
+    "elapsedMs": 45806
+  },
+  "images": {
+    "input.png": "58f7dbdc309f26220923f0e891e8989ee42f9b8bddce1e85372822121c317adf",
+    "reopened.png": "1e5bae2c864edd6d7b84a7b386a38de7e9cbf8c4e294405405f4117fe1f871c3"
+  },
+  "limits": [
+    "Small self-authored synthetic dataset; not general accuracy or human usefulness.",
+    "Japanese development measurements partly overlapped short CPU validation.",
+    "RSS samples at 500 ms cover Ollama and children, not exact system/GPU memory peak.",
+    "Elapsed time includes model loading and inference, excludes evaluation-lock wait; OS file cache was not cleared.",
+    "English explanations and meaningless uncertainty text remain.",
+    "GitHub Actions did not start because of account billing/spending limits.",
+    "Local Linux arm64 validation does not establish GitHub Actions/x64 success."
+  ]
+}
