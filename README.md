@@ -76,6 +76,12 @@ GitHub Issueとコードから根拠付きの実装計画を作ることを目�
 
 [紹介記事を読む：実生成画面・原文照合と出力の設計・実モデル評価・失敗と限界](projects/private-redaction-studio/README.md)
 
+### [Local Screen Reviewer](projects/local-screen-reviewer/README.md)
+
+スクリーンショットと短い仕様を端末内の画像対応LLMで照合し、根拠領域と原文を確認して指摘の採否を保存する技術プロトタイプです。SvelteKit / TypeScript、Ollama、SQLiteを使い、仕様比較と位置特定の分離、縮尺を変えても保つ根拠位置、再推論なしの再表示に取り組みました。日本語を含む合成15ケースの実モデル評価と、失敗改善・文章品質の限界を紹介します。
+
+[紹介記事を読む：日本語の実モデル画面・根拠と保存の設計・評価と失敗・未検証事項](projects/local-screen-reviewer/README.md)
+
 ## 掲載する内容
 
 - プロジェクトの背景と解決したい課題
