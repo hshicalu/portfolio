@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="310" viewBox="0 0 1000 310" role="img" aria-labelledby="title desc">
+  <title id="title">Local Test Data Studioの処理構成</title>
+  <desc id="desc">条件入力からローカルモデルの生成、独立検証、人の確認と修正、保存と出力へ進む。初回の違反は未完成として表示し、部分再生成で新しい違反を作る候補は不採用として元行を保持する。</desc>
+  <defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8" fill="none" stroke="#368574" stroke-width="1.5"/></marker></defs>
+  <rect width="1000" height="310" rx="16" fill="#f3f8f7"/>
+  <g font-family="system-ui, sans-serif" fill="#18362f" text-anchor="middle">
+    <text x="500" y="36" font-size="18" font-weight="700">端末内で生成・検証・確認・保存</text>
+    <g fill="#fff" stroke="#63978a" stroke-width="1.5">
+      <rect x="20" y="65" width="168" height="112" rx="10"/>
+      <rect x="218" y="65" width="168" height="112" rx="10"/>
+      <rect x="416" y="65" width="168" height="112" rx="10"/>
+      <rect x="614" y="65" width="168" height="112" rx="10"/>
+      <rect x="812" y="65" width="168" height="112" rx="10"/>
+    </g>
+    <g stroke="#368574" stroke-width="2" marker-end="url(#arrow)">
+      <path d="M189 120H212"/><path d="M387 120H410"/><path d="M585 120H608"/><path d="M783 120H806"/>
+    </g>
+    <g font-size="17" font-weight="700">
+      <text x="104" y="99">条件入力</text><text x="302" y="99">ローカル生成</text><text x="500" y="99">独立した検証</text><text x="698" y="99">確認・修正</text><text x="896" y="99">保存・出力</text>
+    </g>
+    <g font-size="14">
+      <text x="104" y="129">日本語・スキーマ</text><text x="104" y="152">制約・期待する異常</text>
+      <text x="302" y="129">Ollama / qwen3:8b</text><text x="302" y="152">文章とラベルの候補</text>
+      <text x="500" y="129">Ajv・業務制約</text><text x="500" y="152">部分候補の採否</text>
+      <text x="698" y="129">手編集・選択行再生成</text><text x="698" y="152">人の確認状態を分離</text>
+      <text x="896" y="129">SQLite / JSON・CSV</text><text x="896" y="152">推論なしの再表示</text>
+      <text x="500" y="224">初回の違反は「未完成」として表示。部分候補の新しい違反は不採用にして元の行を保持。</text>
+      <text x="500" y="255">制約の合格と、人による内容・ラベルの確認を区別する。</text>
+    </g>
+  </g>
+</svg>
