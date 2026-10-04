@@ -64,6 +64,12 @@ GitHub Issueとコードから根拠付きの実装計画を作ることを目�
 
 [紹介記事を読む：実アプリの画面・構成と安全性・実モデル評価・失敗と限界](projects/local-file-organizer/README.md)
 
+### [Local Test Data Studio](projects/local-test-data-studio/README.md)
+
+日本語の条件とスキーマから、端末内のLLMで架空のテストデータを作る技術プロトタイプです。SvelteKit / TypeScript、Ollama、Ajv、SQLiteを使い、意図的な異常と期待外の違反の区別、部分再生成候補の採否、修正と保存・出力に取り組みました。実モデルの評価と、重複候補を不採用にして元の行を保持した結果、意味品質と件数の限界を紹介します。
+
+[紹介記事を読む：実生成と保存再表示の画面・構成図・制約検証と修正保護・実測と限界](projects/local-test-data-studio/README.md)
+
 ## 掲載する内容
 
 - プロジェクトの背景と解決したい課題
