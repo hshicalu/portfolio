@@ -64,6 +64,12 @@ GitHub Issueとコードから根拠付きの実装計画を作ることを目�
 
 [紹介記事を読む：実アプリの画面・構成と安全性・実モデル評価・失敗と限界](projects/local-file-organizer/README.md)
 
+### [Private Redaction Studio](projects/private-redaction-studio/README.md)
+
+文書中の機密情報候補を端末内のLLMで抽出し、利用者が確認・修正して一貫した仮名へ置換する技術プロトタイプです。SvelteKit / TypeScript、Ollama、SQLiteを使い、原文の範囲・版との照合、候補の統合・分割、保存と共有出力の分離に取り組みました。実生成デモと難例評価に加え、公開情報の過剰検出と改善案を不採用にした判断も紹介します。
+
+[紹介記事を読む：実生成画面・原文照合と出力の設計・実モデル評価・失敗と限界](projects/private-redaction-studio/README.md)
+
 ### [Local Screen Reviewer](projects/local-screen-reviewer/README.md)
 
 スクリーンショットと短い仕様を端末内の画像対応LLMで照合し、根拠領域と原文を確認して指摘の採否を保存する技術プロトタイプです。SvelteKit / TypeScript、Ollama、SQLiteを使い、仕様比較と位置特定の分離、縮尺を変えても保つ根拠位置、再推論なしの再表示に取り組みました。日本語を含む合成15ケースの実モデル評価と、失敗改善・文章品質の限界を紹介します。
